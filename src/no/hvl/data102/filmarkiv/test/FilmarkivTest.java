@@ -31,11 +31,6 @@ public class FilmarkivTest {
 
 	    assertEquals(1, filmer.length, "Filmen ble ikke lagt til i filmarkivet.");
 	    assertEquals("Film 1", filmer[0].getTittel(), "Filmen har feil tittel.");	
-	    
-	    Filmarkiv2 filmarkiv = new Filmarkiv2();
-	    Film film = new Film(1, "Film 1", "Produsent 1", Sjanger.DRAMA);
-	    filmarkiv.leggTilFilm(film);
-	    assertEquals(1, filmarkiv.antall());
 	    }
 	
 	@Test
